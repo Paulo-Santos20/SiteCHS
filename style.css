@@ -1,22 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;800;900&display=swap');
 @import url('https://css.gg/home.css');
 
-*{
-    margin: 0px;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    -webkit-tap-highlight-color: transparent;
-}
 
-a{
-    text-decoration: none;
-    color: inherit;
-}
-
-a:-webkit-any-link{
-    color: -webkit-link;
-    cursor: pointer;
-}
 
 
 body {
@@ -41,16 +26,6 @@ body {
     max-width: 100%;
     float: left;
 }
-li{
-    text-align: -webkit-match-parent; 
-}
-ul{
-    list-style-type: decimal;
-}
-
-#menu-itens a{
-    display: block;
-}
 
 #menu-itens ul li  {
     width: 200%;
@@ -67,9 +42,6 @@ ul{
     fill: none;
 }
 
-.header img:not(:root){
-    overflow: hidden;
-}
 
 #menu-itens img{
     width:10%;
