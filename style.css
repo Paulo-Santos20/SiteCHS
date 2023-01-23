@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;800;900&display=swap');
-@import url('https://css.gg/home.css');
-
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@200;800;900&display=swap");
+@import url("https://css.gg/home.css");
 
 #header img {
     width: 20%;
@@ -9,7 +8,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #000000;
     background: rgb(255, 255, 255);
     position: flex;
@@ -18,6 +17,10 @@ body {
     min-height: 100vh;
     max-width: 100%;
     line-height: 1.5;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;    
 }
 
 :root {
@@ -42,7 +45,7 @@ body {
     font-size: 0;
     text-align: center;
     color: #000000;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     border: transparent;
     margin: 0;
     padding: 0;
@@ -59,7 +62,7 @@ body {
     font-weight: 700;
     font-size: 18px;
     line-height: 32px;
-    padding: 0 15px;
+    padding: 8px 35px;
 }
 
 #primary_nav_wrap ul li {
@@ -72,14 +75,13 @@ body {
 }
 
 .primary_nav_wrap li.over .top-item {
-    color: #FFFFFF;
-    background-color: #77A6F7;
+    color: #ffffff;
+    background-color: #77a6f7;
 }
 
 #primary_nav_wrap ul li.current-menu-item {
     background: #f0f002;
     border-radius: 20px;
-
 }
 
 #primary_nav_wrap ul li:hover {
@@ -111,7 +113,7 @@ body {
     left: 100%;
 }
 
-#primary_nav_wrap ul li:hover>ul {
+#primary_nav_wrap ul li:hover > ul {
     display: block;
 }
 
@@ -122,7 +124,6 @@ body {
     margin: auto;
     box-sizing: border-box;
     max-width: 100%;
-
 }
 
 #menu-itens li {
@@ -131,7 +132,6 @@ body {
 }
 
 #menu-itens li a {
-
     color: rgb(0, 0, 0);
     padding: 20px;
     display: inline-block;
@@ -141,77 +141,123 @@ body {
 }
 
 #menu-itens li a:hover {
-
     background-color: #ac2828;
     max-width: 100%;
-
 }
 
-.container {
-    width: 1000px;    
-    border: px solid #ddd;
+.slider{
+    margin: auto;
+    width: 66vw;
+    height: 68vh;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.3);    
-    margin-left: 32px ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    place-items: center;  
-
+    background-color: #b1b1b1;
+    padding: 12px;
+    border-radius: 8px;
+    object-fit: contain;
 }
-#container content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+
+.slides{
+    width: 900vw;
+    height: 65vh;
+    display: flex;
+    object-fit: contain;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
     
 }
 
-.wrapper {
-    width: 100%;
+.slide img{
+    width: 66vw;
+    height: 68vh;
+    
+}
+.manual-navigation{
+    position: absolute;
+    width: 70vw;    
+    justify-content: center;
     display: flex;
-    animation: slide 10s infinite linear;
-    height: 700px;    
+     
+}
+
+.manual-btn{
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+#radio5:checked ~ .first{
+    margin-left: -100%;
+}
+
+.navigation-auto div{
+    border: 2px solid #20a6ff;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+       
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 70vw;    
+    margin:  575px 0px 0px 0px;
+    display: flex;
+    justify-content: center;
 
 }
 
-
-
-img {
-    width: 100%;
-    transition: transform 1s ease-in-out;
-
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
 }
 
-@keyframes slide {
-    0% {
-        transform: translateX(0);
-    }
+.radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
 
-    25% {
-        transform: translateX(0);
-    }    
-   
-    50% {
-        transform: translateX(-100%);
-    }
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
 
-    55% {
-        transform: translateX(-100%);
-    }
-
-    75% {
-        transform: translateX(-200%);
-    }
-
-    80% {
-        transform: translateX(-200%);
-    }
-
-    100% {
-        transform: translateX(-300%);
-    }
+.slider a{
+display:flex;
+background-color: #ac2828;
+position: absolute;
 }
