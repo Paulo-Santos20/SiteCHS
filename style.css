@@ -256,8 +256,23 @@ body {
     background-color: #fff;
 }
 
-.slider a{
-display:flex;
-background-color: #ac2828;
-position: absolute;
+
+.description a.link {
+    color: blue;    
+    font-size:20px;
+    padding: ;
+    border-radius: 5px;    
+    border-color: #e3dfdf;
+}
+
+.description {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    color: white;
+    font-size:40px;
+    font-weight: bold;
+    background: #47494a8f;      
+    border-radius: 10px;
+    padding: 0px 35px 0px 35px; 
 }
