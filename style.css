@@ -117,52 +117,24 @@ body {
     display: block;
 }
 
-#menu-itens {
-    list-style: none;
-    padding: 0;
-    background-color: #ffffff;
-    margin: auto;
-    box-sizing: border-box;
-    max-width: 100%;
-}
-
-#menu-itens li {
-    display: inline;
-    max-width: 100%;
-}
-
-#menu-itens li a {
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    display: inline-block;
-    text-decoration: none;
-    transition: all.4s;
-    max-width: 100%;
-}
-
-#menu-itens li a:hover {
-    background-color: #ac2828;
-    max-width: 100%;
-}
-
 .slider {
     margin: auto;
     width: 66vw;
     height: 68vh;
     overflow: hidden;
     background-color: #b1b1b1;
-    padding: 12px;
+    padding: 5px;
     border-radius: 8px;
     object-fit: contain;
+    float: left;
+    margin-left: 20px;
 }
-
 .slides {
     width: 900vw;
     height: 65vh;
     display: flex;
     object-fit: contain;
 }
-
 .slides input {
     display: none;
 }
@@ -251,21 +223,25 @@ body {
 }
 
 .description a.link {
-   
-    font-size: 20px;
-    padding: 20px;
-    border-radius: 5px;
-    border-color: #e3dfdf;
+    font-size: 15px;
+    border-radius: 50px;
+    border-color: #cb1111;
+    color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin:0px 50px auto;
 }
-
 .description {
     position: absolute;
     top: 10px;
-    left: 0px;
-    color: white;
-    font-size: 40px;
+    left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
     font-weight: bold;
+    width: 300px;
     background: #47494a8f;
     border-radius: 10px;
-    padding: 0px 35px 0px 35px;
+    padding: 0px 35px 0px 75px;
 }
