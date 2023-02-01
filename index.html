@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <header>
         <meta charset="UTF-8">
@@ -8,21 +8,22 @@
         <link rel="stylesheet" href="style.css">
         <title>Início</title>
     </header>
-
     <body>
-        <div id="header">
+        <div class="header" id="header">
             <img src="./img/Logo CHS.jpg" alt="Descrição da imagem"
                 style="display:
                 inlne-block;">
         </div>
         <nav id="primary_nav_wrap">
             <ul>
-                <li class="current-menu-item"><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a>
-                    <li><a href="#">Unidades</a>
-                        <li><a href="#">Oportunidades</a></li>
-                        <li><a href="#">Transparência</a></li>
-                        <li><a href="#">Mais</a>
+                <li class="current-menu-item" id="inicio-menu-item"><a
+                        href="#primary_nav_wrap">Início</a></li>
+                <li id="sobre-menu-item"><a href="#sobre">Sobre</a>
+                    <li id="unidades-menu-item"><a href="#unidades">Unidades</a>
+                        <li id="unidades-menu-item"><a href="#oportunidades">Oportunidades</a></li>
+                        <li id="transparencia-menu-item"><a
+                                href="#transparencia">Transparência</a></li>
+                        <li id="mais-menu-item"><a href="#mais">Mais</a>
                             <ul>
                                 <li class="dir"><a href="#">Regulação</a></li>
                                 <li class="dir"><a href="#">Contato</a>
@@ -35,158 +36,207 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <div class="slider">
-                                <div class="slides">
-                                    <input type="radio" name="radio-btn"
-                                        id="radio1">
-                                    <input type="radio" name="radio-btn"
-                                        id="radio2">
-                                    <input type="radio" name="radio-btn"
-                                        id="radio3">
-                                    <input type="radio" name="radio-btn"
-                                        id="radio4">
-                                    <input type="radio" name="radio-btn"
-                                        id="radio5">
+                            <hr>
+                            <div id="inicio-section" class="section">
+                                <div class="slider" id="slider">
+                                    <div class="slides">
+                                        <input type="radio" name="radio-btn"
+                                            id="radio1">
+                                        <input type="radio" name="radio-btn"
+                                            id="radio2">
+                                        <input type="radio" name="radio-btn"
+                                            id="radio3">
+                                        <input type="radio" name="radio-btn"
+                                            id="radio4">
+                                        <input type="radio" name="radio-btn"
+                                            id="radio5">
 
 
-                                    <div class="slide first">
-                                        <img src="./img/frutas.jpg" alt="Imagem
-                                            1"/>
-                                        <div class="description">
-                                            <p>Saiba o que fazer para manter uma
-                                                vida saudável</p>
-                                            <a href="https://www.example.com"
-                                                class="link">Saiba mais</a>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img/cirurgia.jpg"
-                                            alt="Imagem 2"/>
-                                        <div class="description">
-                                            <p>Hospital Alfredo Abrahão realiza
-                                                curgia de prótese de quadril</p>
-                                            <a href="https://www.example.com"
-                                                class="link">Saiba mais</a>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img/cesta.jpg" alt="Imagem
-                                            3"/>
-                                        <div class="description">
-                                            <p>Colaboradores do CHS - Anápolis
-                                                são homenageados</p>
-                                            <a href="https://www.example.com"
-                                                class="link">Saiba mais</a>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img/confraternizacao.jpg"
-                                            alt="Imagem 4"/>
-                                        <div class="description">
-                                            <p>CHS - Anápolis realiza semana de
-                                                Luta Contra Queimaduras</p>
-                                            <a href="https://www.example.com"
-                                                class="link">Saiba mais</a>
-                                        </div>
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./img/folha.jpg"
-                                            alt="Imagem 5"/>
-                                        <div class="description">
-                                            <p>CHS divulga área de transparência
-                                                no Portal</p>
-                                            <a href="https://www.example.com"
-                                                class="link">Saiba mais</a>
-                                        </div>
-                                    </div>
-
-                                    <div class="navigation-auto">
-                                        <div class="auto-btn1"></div>
-                                        <div class="auto-btn2"></div>
-                                        <div class="auto-btn3"></div>
-                                        <div class="auto-btn4"></div>
-                                        <div class="auto-btn5"></div>
-
-                                    </div>
-                                </div>
-                                <div class="manual-navigation">
-                                    <label for="radio1" class="manual-btn"></label>
-                                    <label for="radio2" class="manual-btn"></label>
-                                    <label for="radio3" class="manual-btn"></label>
-                                    <label for="radio4" class="manual-btn"></label>
-                                    <label for="radio5" class="manual-btn"></label>
-                                </div>
-                            </div>
-                            <div class="news">
-                                <div class="newslatter">
-                                    <h1>Ultimas Notícias</h1>
-                                    <table class="table">
-                                        <tr>
-                                            <a href="google.com.br"
-                                                class="link">
-                                                <h2>CHS - João Paulo II assume
-                                                    administração dos hospital
-                                                    Municipal
-                                                    de Timbaúba</h2>
-                                            </a>
-                                            <p>Levar saúde com qualidade e
-                                                atendimento humanizado faz parte
-                                                do
-                                                CHS- Associação João...</p>
-                                        </tr>
-                                        <tr><a href="google.com.br"
-                                                class="link">
-                                                <h2>Manuseio em bomba de infusão
-                                                    é
-                                                    tema
-                                                    de capacitação no CHS- Bo...</h2>
-                                            </a>
-                                            <p>A Unidade Hospitalar CHS - Bom
-                                                Jardim, realizou de 11 a 15 de
-                                                julho
-                                                um treinamento para o...</p>
-                                        </tr>
-                                        <tr><a href="google.com.br"
-                                                class="link">
-                                                <h2>Capacitação é realizada no
-                                                    CHS-
-                                                    Bom
-                                                    Jardim</h2>
-                                            </a>
-                                            <p>Visando promover conhecimento dos
-                                                colaboradores na melhoria da...</p>
-                                        </tr>
-                                        <tr><a href="google.com.br"
-                                                class="link">
-                                                <h2>Saiba oque fazer para manter
+                                        <div class="slide first">
+                                            <img src="./img/frutas.jpg"
+                                                alt="Imagem
+                                                1"/>
+                                            <div class="description">
+                                                <p>Saiba o que fazer para manter
                                                     uma
-                                                    vida saudável</h2>
-                                            </a>
-                                            <p>Se tem uma coisa que todos sabem,
-                                                mas poucos seguem são os
-                                                cuidados
-                                                para manter a saú...</p>
+                                                    vida saudável</p>
+                                                <a
+                                                    href="https://www.example.com"
+                                                    class="link">Saiba mais</a>
+                                            </div>
+                                        </div>
+                                        <div class="slide">
+                                            <img src="./img/cirurgia.jpg"
+                                                alt="Imagem 2"/>
+                                            <div class="description">
+                                                <p>Hospital Alfredo Abrahão
+                                                    realiza
+                                                    curgia de prótese de quadril</p>
+                                                <a
+                                                    href="https://www.example.com"
+                                                    class="link">Saiba mais</a>
+                                            </div>
+                                        </div>
+                                        <div class="slide">
+                                            <img src="./img/cesta.jpg"
+                                                alt="Imagem
+                                                3"/>
+                                            <div class="description">
+                                                <p>Colaboradores do CHS -
+                                                    Anápolis
+                                                    são homenageados</p>
+                                                <a
+                                                    href="https://www.example.com"
+                                                    class="link">Saiba mais</a>
+                                            </div>
+                                        </div>
+                                        <div class="slide">
+                                            <img
+                                                src="./img/confraternizacao.jpg"
+                                                alt="Imagem 4"/>
+                                            <div class="description">
+                                                <p>CHS - Anápolis realiza semana
+                                                    de
+                                                    Luta Contra Queimaduras</p>
+                                                <a
+                                                    href="https://www.example.com"
+                                                    class="link">Saiba mais</a>
+                                            </div>
+                                        </div>
+                                        <div class="slide">
+                                            <img src="./img/folha.jpg"
+                                                alt="Imagem 5"/>
+                                            <div class="description">
+                                                <p>CHS divulga área de
+                                                    transparência
+                                                    no Portal</p>
+                                                <a
+                                                    href="https://www.example.com"
+                                                    class="link">Saiba mais</a>
+                                            </div>
+                                        </div>
 
-                                        </tr>
-                                        <tr><a href="google.com.br"
-                                                class="link">
-                                                <h2>CHS - Bom Jardim realiza
-                                                    treinamento
-                                                    para seus colaboradores</h2>
-                                            </a>
-                                            <p>Sempre atentos em acolher melhor
-                                                a
-                                                população que usa os serviços do
-                                                Hospital Municipal...</p>
-                                        </tr>
-                                        <a href="google.com.br"
-                                                class="link">Ver todas</a>
-                                    </table>
-                                    
+                                        <div class="navigation-auto">
+                                            <div class="auto-btn1"></div>
+                                            <div class="auto-btn2"></div>
+                                            <div class="auto-btn3"></div>
+                                            <div class="auto-btn4"></div>
+                                            <div class="auto-btn5"></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="manual-navigation">
+                                        <label for="radio1" class="manual-btn"></label>
+                                        <label for="radio2" class="manual-btn"></label>
+                                        <label for="radio3" class="manual-btn"></label>
+                                        <label for="radio4" class="manual-btn"></label>
+                                        <label for="radio5" class="manual-btn"></label>
+                                    </div>
                                 </div>
-                                
+                                <div class="news" id="news">
+                                    <div class="newslatter">
+                                        <h1>Ultimas Notícias</h1>
+                                        <table class="table">
+                                            <tr>
+                                                <a href="google.com.br"
+                                                    class="link">
+                                                    <h2>CHS - João Paulo II
+                                                        assume
+                                                        administração dos
+                                                        hospital
+                                                        Municipal
+                                                        de Timbaúba</h2>
+                                                </a>
+                                                <p>Levar saúde com qualidade e
+                                                    atendimento humanizado faz
+                                                    parte
+                                                    do
+                                                    CHS- Associação João...</p>
+                                            </tr>
+                                            <tr><a href="google.com.br"
+                                                    class="link">
+                                                    <h2>Manuseio em bomba de
+                                                        infusão
+                                                        é
+                                                        tema
+                                                        de capacitação no CHS-
+                                                        Bo...</h2>
+                                                </a>
+                                                <p>A Unidade Hospitalar CHS -
+                                                    Bom
+                                                    Jardim, realizou de 11 a 15
+                                                    de
+                                                    julho
+                                                    um treinamento para o...</p>
+                                            </tr>
+                                            <tr><a href="google.com.br"
+                                                    class="link">
+                                                    <h2>Capacitação é realizada
+                                                        no
+                                                        CHS-
+                                                        Bom
+                                                        Jardim</h2>
+                                                </a>
+                                                <p>Visando promover conhecimento
+                                                    dos
+                                                    colaboradores na melhoria
+                                                    da...</p>
+                                            </tr>
+                                            <tr><a href="google.com.br"
+                                                    class="link">
+                                                    <h2>Saiba oque fazer para
+                                                        manter
+                                                        uma
+                                                        vida saudável</h2>
+                                                </a>
+                                                <p>Se tem uma coisa que todos
+                                                    sabem,
+                                                    mas poucos seguem são os
+                                                    cuidados
+                                                    para manter a saú...</p>
+                                            </tr>
+                                            <tr><a href="google.com.br"
+                                                    class="link">
+                                                    <h2>CHS - Bom Jardim realiza
+                                                        treinamento
+                                                        para seus colaboradores</h2>
+                                                </a>
+                                                <p>Sempre atentos em acolher
+                                                    melhor
+                                                    a
+                                                    população que usa os
+                                                    serviços do
+                                                    Hospital Municipal...</p>
+                                            </tr>
+                                            <a href="google.com.br"
+                                                class="link">Ver todas</a>
+                                        </table>
+
+                                    </div>
+                                </div>
                             </div>
-                            
-                            <script src="script.js"></script>
+                            <div id="sobre-section" class="section"
+                                style="display: none;">
+                                <div class="Sobre" id="Sobre">
+                                    <p>teste</p>
+                                </div>
+                            </div>
+                            <script>
+                                const inicioMenuItem = document.getElementById('inicio-menu-item');
+                                const sobreMenuItem = document.getElementById('sobre-menu-item');
+                                
+                                
+                                inicioMenuItem.addEventListener('click', function() {
+                                  document.getElementById('inicio-section').style.display = 'block';
+                                  document.getElementById('sobre-section').style.display = 'none';
+                                
+                                });
+                                
+                                sobreMenuItem.addEventListener('click', function() {
+                                  document.getElementById('inicio-section').style.display = 'none';
+                                  document.getElementById('sobre-section').style.display = 'block';
+                                  
+                                });
+                                </script>
                         </body>
                     </html>
