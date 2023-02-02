@@ -376,9 +376,9 @@ h6 {
 }
 .timeline{
     max-height: 100vh ;
-    max-width: 80vh;
+    max-width: 800vw;
     height: 70vh;
-    width: 0ch + 5rem;
+    width: 85vw;
     overflow-x: auto;
     border: 1 px solid red;
     align-self: start;
