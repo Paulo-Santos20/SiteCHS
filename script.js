@@ -30,12 +30,7 @@ function nextImage(){
   // START
   window.addEventListener("load", init);
 
-  function init() {
-    setEqualHeights(elH);
-    animateTl(xScrolling, arrows, timeline);
-    setSwipeFn(timeline, arrowPrev, arrowNext);
-    setKeyboardFn(arrowPrev, arrowNext);
-  }
+ 
 
   // SET EQUAL HEIGHTS
   function setEqualHeights(el) {

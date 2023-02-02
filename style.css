@@ -374,15 +374,29 @@ h6 {
     padding: 8px;
     text-align: left;
 }
+.timeline{
+    max-height: 100vh ;
+    max-width: 80vh;
+    height: 70vh;
+    width: 0ch + 5rem;
+    overflow-x: auto;
+    border: 1 px solid red;
+    align-self: start;
+    right: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    scroll-snap-type: y mandatory;
+    scroll-padding: 0.25rem;
+}
 
 button {
     background: transparent;
     border: none;
     cursor: pointer;
     outline: none;
-  }
-  .linha{    
-    padding: 50px 0;
   }
  
   .section .container {
@@ -402,10 +416,9 @@ button {
     .timeline {
     white-space: nowrap;
     overflow-x: hidden;
-    background-color: #335899;
+    background-color: rgba(194, 230, 255, 0.506);
     border-radius: 10px;
-    margin: 50px;
-    
+    margin: 50px;    
   }
   
   .timeline ol {
