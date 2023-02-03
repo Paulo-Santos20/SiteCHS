@@ -21,6 +21,7 @@ body {
     align-items: center;
 }
 
+
 :root {
     font-size: clamp(1rem, 1vw, 1.5rem);
 }
@@ -115,4 +116,3 @@ body {
 #primary_nav_wrap ul li:hover > ul {
     display: block;
 }
-
