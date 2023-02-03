@@ -1,22 +1,6 @@
-let count = 1;
-document.getElementById("radio1").checked = true;
 
-setInterval(function(){
-nextImage();
-}, 2000)
+(function () {
 
-
-function nextImage(){
-    count++;
-    if(count>5){
-        count=1;
-    }
-    document.getElementById("radio"+count).checked = true;
-}
-
-(function() {
-
-  // VARIABLES
   const timeline = document.querySelector(".timeline ol"),
     elH = document.querySelectorAll(".timeline li > div"),
     arrows = document.querySelectorAll(".timeline .arrows .arrow"),
@@ -26,13 +10,16 @@ function nextImage(){
     lastItem = document.querySelector(".timeline li:last-child"),
     xScrolling = 280,
     disabledClass = "disabled";
-
-  // START
   window.addEventListener("load", init);
 
- 
+  function init() {
+    setEqualHeights(elH);
+    animateTl(xScrolling, arrows, timeline);
+    setSwipeFn(timeline, arrowPrev, arrowNext);
+    setKeyboardFn(arrowPrev, arrowNext);
+  }
 
-  // SET EQUAL HEIGHTS
+
   function setEqualHeights(el) {
     let counter = 0;
     for (let i = 0; i < el.length; i++) {
@@ -48,8 +35,7 @@ function nextImage(){
     }
   }
 
-  // CHECK IF AN ELEMENT IS IN VIEWPORT
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+
   function isElementInViewport(el) {
     const rect = el.getBoundingClientRect();
     return (
@@ -76,7 +62,7 @@ function nextImage(){
   function animateTl(scrolling, el, tl) {
     let counter = 0;
     for (let i = 0; i < el.length; i++) {
-      el[i].addEventListener("click", function() {
+      el[i].addEventListener("click", function () {
         if (!arrowPrev.disabled) {
           arrowPrev.disabled = true;
         }
@@ -130,3 +116,19 @@ function nextImage(){
   }
 
 })();
+
+let count = 1;
+document.getElementById("radio1").checked = true;
+
+setInterval(function () {
+  nextImage();
+}, 2000)
+
+
+function nextImage() {
+  count++;
+  if (count > 5) {
+    count = 1;
+  }
+  document.getElementById("radio" + count).checked = true;
+}
