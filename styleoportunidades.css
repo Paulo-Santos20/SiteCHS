@@ -150,6 +150,7 @@ p {
 }
 #check {
     display: inline-block;
+    margin-left: 1em;
 }
 vagas {
     background-color: #f0f8ff;
@@ -180,6 +181,7 @@ button {
 }
 .campo {
     margin-bottom: 1em;
+    margin-left: 1em;
 }
 
 .campo label {
@@ -233,3 +235,10 @@ fieldset.grupo .campo {
 #botao, select{
     cursor: pointer;
 }
+
+.curriculo{
+    margin-left: 1em;
+}
+
+
+
