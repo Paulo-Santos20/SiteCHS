@@ -64,7 +64,7 @@
                                     <div>
                                         <h3>Cadastre-se em nossas vagas</h3>
                                     </div>
-                                    <form>
+                                    <form class="contact-form" action ="https://formsubmit.co/pcardoso@ceijoaopauloii.org.br" method ="POST">
                                         <fieldset class="grupo">
                                             <div class="campo">
                                                 <label for="nome"><strong>Nome</strong></label>
@@ -76,11 +76,11 @@
                                                 <input type="email" name="email"
                                                     id="email" required>
                                             </div>
-
-                                            <div class="campo">
-                                                <label for="senioridade"><strong>Senioridade</strong></label>
-                                                <select id="senioridade"
-                                                    required>
+                                        </fieldset>
+                                        <fieldset class="grupo">
+                                            <div id="check">
+                                                <label for="vaga"><strong> Vagas</strong></label><br>
+                                                <select id="vaga" required>
                                                     <option value="">Selecione
                                                         uma das vagas</option>
                                                     <option value="">Enfermeiro</option>
@@ -90,29 +90,29 @@
                                                 </select>
                                             </div>
                                         </fieldset>
-                                        <fieldset class="grupo">
-                                            <div class="campo">
-                                                <label">Currículo</label>
-                                                <input type="text" name="name"
-                                                    id="name">
-                                            </div>
-                                        </fieldset>
-                                        <fieldset class="grupo">
-                                            <div class="campo">
-                                                <br>
-                                                <label">Conte um pouco da sua
-                                                    experiência</label>
-                                                <br>
-                                                <textarea name="experiencia"
-                                                    id="experiencia" rows="12"
-                                                    style="width: 60em;"></textarea>
-                                            </div>
-                                            <button class="botao" type="submit">Enviar</button>
-                                        </fieldset>
+                                        <form action="/action_page.php"
+                                            method="post"
+                                            enctype="multipart/form-data">
+                                            <input type="file" name="pic"
+                                                id="image" required>
+                                        </form>
+                                        <div class="campo">
+                                            <br>
+                                            <label">Conte um pouco da sua
+                                                experiência</label>
+                                            <br>
+                                            <textarea name="experiencia"
+                                                id="experiencia" rows="12"
+                                                style="width: 60em;"></textarea>
+                                        </div>
+                                        <button class="botao" type="submit"
+                                            onsubmit="">Enviar Currículo</button>
+                                    </fieldset>
 
-                                    </form>
-                                </div>
-
+                                </form>
                             </div>
-                        </body>
-                    </html>
+
+                        </div>
+                        <script src="scriptoportunidades.js"></script>
+                    </body>
+                </html>
