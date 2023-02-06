@@ -62,36 +62,37 @@
                                         e venha trabalhar em uma das unidades
                                         CHS.</p>
                                     <div>
-                                        <h3>Cadastre-se em nossas vagas</h3>                                        
+                                        <h3>Cadastre-se em nossas vagas</h3>
                                     </div>
                                     <form>
                                         <fieldset class="grupo">
                                             <div class="campo">
-                                                <label>Nome</label>
-                                                <input type="text" name="name"
-                                                    id="name">
+                                                <label for="nome"><strong>Nome</strong></label>
+                                                <input type="text" name="nome"
+                                                    id="nome" required>
                                             </div>
                                             <div class="campo">
-                                                <label">Email</label>
+                                                <label for="email"><strong>Email</strong></label>
                                                 <input type="email" name="email"
-                                                    id="email">
+                                                    id="email" required>
                                             </div>
 
                                             <div class="campo">
-                                                <label>Cargo pretendido</label>                                              
-                                                    <select name="cargo">
-                                                        <option value="">Selecione
-                                                            uma das vagas</option>
-                                                        <option value="">Enfermeiro</option>
-                                                        <option value="">Ti</option>
-                                                        <option value="">Medico</option>
-                                                        <option value="">etc</option>
-                                                    </select>
+                                                <label for="senioridade"><strong>Senioridade</strong></label>
+                                                <select id="senioridade"
+                                                    required>
+                                                    <option value="">Selecione
+                                                        uma das vagas</option>
+                                                    <option value="">Enfermeiro</option>
+                                                    <option value="">Ti</option>
+                                                    <option value="">Medico</option>
+                                                    <option value="">etc</option>
+                                                </select>
                                             </div>
                                         </fieldset>
                                         <fieldset class="grupo">
                                             <div class="campo">
-                                                <label">Curriculo</label>
+                                                <label">Currículo</label>
                                                 <input type="text" name="name"
                                                     id="name">
                                             </div>
@@ -99,11 +100,14 @@
                                         <fieldset class="grupo">
                                             <div class="campo">
                                                 <br>
-                                                <label">Conte um pouco da sua experiência</label>
+                                                <label">Conte um pouco da sua
+                                                    experiência</label>
                                                 <br>
-                                                <textarea name="experiencia" id="experiencia" rows="12" style="width: 60em;"></textarea>
+                                                <textarea name="experiencia"
+                                                    id="experiencia" rows="12"
+                                                    style="width: 60em;"></textarea>
                                             </div>
-                                            <button type="submit">Enviar/button>
+                                            <button class="botao" type="submit">Enviar</button>
                                         </fieldset>
 
                                     </form>

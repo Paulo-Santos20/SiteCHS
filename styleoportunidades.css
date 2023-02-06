@@ -21,7 +21,6 @@ body {
     align-items: center;
 }
 
-
 :root {
     font-size: clamp(1rem, 1vw, 1.5rem);
 }
@@ -138,7 +137,7 @@ h2 {
     border-radius: 20px;
     text-align: center;
 }
-h3{
+h3 {
     font-size: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
         "Open Sans", "Helvetica Neue", sans-serif;
@@ -149,4 +148,88 @@ p {
     margin: 50px;
     width: 35vw;
 }
+#check {
+    display: inline-block;
+}
+vagas {
+    background-color: #f0f8ff;
+    font-size: 1em;
+    color: #59429d;
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
+}
+fieldset {
+    border: 0;
+}
 
+input,
+select,
+textarea,
+button {
+    border-radius: 5px;
+    font-size: 1em;
+    color: #59429d;
+}
+.grupo:before,
+.grupo:after {
+    display: table;
+}
+.grupo:after {
+    clear: both;
+}
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #77a6f7;
+    display: block;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #9372f7;
+    box-shadow: 2px 2px 2px rgba(247, 243, 243, 0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+.campo int:focus,
+.campo select:focus,
+.campo textarea:focus {
+    background: #ffffff;
+}
+
+.botao {
+    font-size: 1.2em;
+    background: turquoise;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.botao:hover {
+    background: #000000;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+}
+.botao, select{
+    cursor: pointer;
+}
