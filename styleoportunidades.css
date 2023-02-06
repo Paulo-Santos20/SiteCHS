@@ -209,7 +209,7 @@ fieldset.grupo .campo {
     background: #ffffff;
 }
 
-.botao {
+#botao {
     font-size: 1.2em;
     background: turquoise;
     border: 0;
@@ -225,11 +225,11 @@ fieldset.grupo .campo {
     display: flex;
 }
 
-.botao:hover {
+#botao:hover {
     background: #000000;
     box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.2);
     text-shadow: none;
 }
-.botao, select{
+#botao, select{
     cursor: pointer;
 }
