@@ -28,7 +28,7 @@
                             <ul>
                                 <li class="dir"><a href="#">Regulação</a></li>
                                 <li class="dir"><a href="#">Contato</a>
-                                    <li class="dir"><a href="#">Qualidade</a>
+                                    <li class="dir"><a href="Qualidade.html">Qualidade</a>
                                         <li class="dir"><a href="#">Notícias</a>
                                             <li class="dir"><a href="#">Gestão
                                                     Hospitalar CHS</a>
@@ -37,7 +37,7 @@
                                     </li>
                                 </ul>
                             </nav>
-                            <hr>
+                            <br>
                             <div id="inicio-section" class="section">
                                 <div class="slider" id="slider">
                                     <div class="slides">
@@ -451,6 +451,7 @@
                                             document.getElementById('unidades-menu-item');
                                             const oportunidadesMenuItem =
                                             document.getElementById('oportunidades-menu-item');
+                                            const qualidadeMenuItem = document.getElementById('qualidade-menu-item');
 
 
                                             inicioMenuItem.addEventListener('click', 
@@ -487,6 +488,8 @@
                                             = 'block';
                                             document.getElementById('oportunidades-section').style.display
                                             ='none';
+                                            document.getElementById('qualidade-section').style.display
+                                            ='none';
                                             });
 
 
@@ -500,8 +503,22 @@
                                             = 'none';
                                             document.getElementById('oportunidades-section').style.display
                                             ='block';
+                                            document.getElementById('qualidade-section').style.display
+                                            ='none';
                                             });
 
+                                            qualidadeMenuItem.addEventListener('click',
+                                            function() {
+                                            document.getElementById('inicio-section').style.display
+                                            = 'none';
+                                            document.getElementById('sobre-section').style.display
+                                            = 'none';
+                                            document.getElementById('unidades-section').style.display
+                                            = 'none';
+                                            document.getElementById('oportunidades-section').style.display
+                                            ='none';
+                                            document.getElementById('qualidade-section').style.display='block';
+                                            });
                                         </script>
                                     <script src="script.js"></script>
                                 </body>
