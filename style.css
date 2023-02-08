@@ -252,7 +252,7 @@ body {
 
 .news {
     max-height: 100vh - 8rem;
-    max-width: 45vh;
+    max-width: 55vh;
     height: 58vh;
     width: 0ch + 5rem;
     overflow-x: auto;
