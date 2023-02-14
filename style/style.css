@@ -369,6 +369,21 @@ h6 {
     text-align: left;
 }
 
-.news p{
+.news p {
     font-size: 19px;
+}
+
+.all {
+    padding: 20px;
+    background-color: #7b828d;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;  
+    transition: 0.5s all; 
+}
+
+.all:hover{
+    background-color: #335899;
+    color: #000000;
 }

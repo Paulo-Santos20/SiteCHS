@@ -155,6 +155,11 @@ body {
     width: 16.5vw;
 }
 
+.unidades a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .container {
     display: flex;
     margin: auto;
