@@ -271,3 +271,28 @@ p{
    display:flex;
   margin: 0 auto;
 }
+
+  .svg-container {
+    position: relative;
+    display: inline-block;
+  }
+  .svg-caption {
+    display: none;
+    position: absolute;
+    bottom: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    border-radius: 12px;
+    background-color: #2773a7;
+    font-size: 10px;
+  }
+  
+  .svg-container:hover .svg-caption {
+    display: block;
+  }
+  
+  
+  
+  
+  
