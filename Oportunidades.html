@@ -30,7 +30,9 @@
                                 <li class="dir"><a href="contato.html">Contato</a>
                                     <li class="dir"><a href="Qualidade.html">Qualidade</a>
                                         <li class="dir"><a href="Noticias.html">Notícias</a>
-                                            <li class="dir"><a href="https://ceijoaopauloii.local.conectew.com.br/" target="_blank">Gestão
+                                            <li class="dir"><a
+                                                    href="https://ceijoaopauloii.local.conectew.com.br/"
+                                                    target="_blank">Gestão
                                                     Hospitalar CHS</a>
                                             </li>
                                         </ul>
@@ -68,59 +70,67 @@
                                     </div>
                                     <form
                                         action="https://formsubmit.co/pcardoso@ceijoaopauloii.org.br"
-                                        method="POST"> <fieldset class="grupo">
+                                        method="POST" enctype="multipart/form-data">
+                                        <div class="curriculos">
+                                            <fieldset class="grupo">
+                                                <div class="campo">
+                                                    <label for="nome"><strong>Nome</strong></label>
+                                                    <input type="text"
+                                                        name="Nome"
+                                                        id="nome"
+                                                        placeholder="Digite seu
+                                                        nome" required>
+                                                </div>
+                                                <div class="campo">
+                                                    <label for="email"><strong>Email</strong></label>
+                                                    <input type="email"
+                                                        name="Email"
+                                                        id="email"
+                                                        placeholder="Digite seu
+                                                        email" required>
+                                                </div>
+                                            </fieldset>
+                                            <fieldset class="grupo">
+                                                <div id="check">
+                                                    <label for="vaga"><strong>
+                                                            Vagas</strong></label><br>
+                                                    <select id="vaga" required>
+                                                        <option value="">Selecione
+                                                            uma das vagas</option>
+                                                        <option value="">Enfermeiro</option>
+                                                        <option value="">Ti</option>
+                                                        <option value="">Medico</option>
+                                                        <option value="">etc</option>
+                                                    </select>
+                                                </div>
+                                            </fieldset> <br>
+                                            <div class="curriculo">
+                                                <input type="file"
+                                                    name="Currículo"
+                                                    id="image" required>                                                    
+                                                    <br>
+                                                </div>
                                             <div class="campo">
-                                                <label for="nome"><strong>Nome</strong></label>
-                                                <input type="text" name="Nome"
-                                                    id="nome"
-                                                    placeholder="Digite seu
-                                                    nome" required>
+                                                <label">Conte um pouco da sua
+                                                    experiência</label>
+                                                <br>
+                                                <textarea name="Experiência"
+                                                    id="Experiência" rows="12"
+                                                    style="width: 60em;"></textarea>
                                             </div>
-                                            <div class="campo">
-                                                <label for="email"><strong>Email</strong></label>
-                                                <input type="email" name="Email"
-                                                    id="email"
-                                                    placeholder="Digite seu
-                                                    email" required>
-                                            </div>
-                                        </fieldset>
-                                        <fieldset class="grupo">
-                                            <div id="check">
-                                                <label for="vaga"><strong> Vagas</strong></label><br>
-                                                <select id="vaga" required>
-                                                    <option value="">Selecione
-                                                        uma das vagas</option>
-                                                    <option value="">Enfermeiro</option>
-                                                    <option value="">Ti</option>
-                                                    <option value="">Medico</option>
-                                                    <option value="">etc</option>
-                                                </select>
-                                            </div>
-                                        </fieldset> <br>
-                                        <div class="curriculo">
-                                            <input type="file" name="Currículo"
-                                                id="image" required><br>
-                                            </div>
-                                            <div class="campo">
-                                            <label">Conte um pouco da sua
-                                            experiência</label>
-                                        <br>
-                                        <textarea name="experiencia"
-                                            id="Experiência" rows="12"
-                                            style="width: 60em;"></textarea>
+                                            <button id="botao" class="button2" type="submit">ENVIAR
+                                                CURRÍCULO</button>
+                                               
+                                            <input type="hidden" name="_subject"
+                                                value="Cadastro de vaga!">
+                                            <input type="text" name="_honey"
+                                                style="display:none">
+                                            <input type="hidden" name="_captcha"
+                                                value="false">
+                                        </form>
                                     </div>
-                                    <button id="botao" type="submit">ENVIAR
-                                        CURRÍCULO</button>
-                                    <input type="hidden" name="_subject"
-                                        value="Cadastro de vaga!">
-                                    <input type="text" name="_honey"
-                                        style="display:none">
-                                    <input type="hidden" name="_captcha"
-                                        value="false">
-
-                                </form>
+                                </div>
                             </div>
-                        </div>                       
-                        <script src="scriptoportunidades.js"></script>
-                    </body>
-                </html>
+                            <script src="scriptoportunidades.js"></script>
+                        </body>
+                    </html>
