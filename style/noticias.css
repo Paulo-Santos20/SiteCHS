@@ -131,6 +131,7 @@ body {
     background: white;
     padding: .4em;
     border-radius: 6px;
+   
   }
   
   .card-image {
@@ -187,6 +188,8 @@ body {
     background-color: rgb(255, 255, 255);
     border: 1px solid black;    
     align-items: center;
-    justify-content: center;
-    float: left;    
-  }
+    justify-content: center;     
+    width: 60vw;
+    height: 40vh;
+    margin-left: 40px;
+}
