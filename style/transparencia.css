@@ -138,8 +138,15 @@ body {
     background-color: hsl(60, 100%, 100%);
     border-radius: 1.5rem;
 }
-
-.container li{
+.container ul{
     background-color: hsl(48, 86%, 67%);
-    font-size: 20px;
+    font-size: 20px;    
 }
+
+.secundary-container ul ul {
+    display: none;
+  }
+  .secundary-container ul ul ul {
+    display: none;
+  }
+  
