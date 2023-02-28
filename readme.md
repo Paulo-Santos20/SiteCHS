@@ -23,3 +23,7 @@ Coisas a fazer:
 
 *Notícias
 -Elaborar a página
+
+Issues
+
+-Todos os arquivos de Abreu e Lima sem arquivos válidos.
