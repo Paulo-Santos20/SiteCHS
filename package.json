@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "jquery": "^3.6.3",
+    "jquery.js": "^0.0.2-security",
+    "mtree": "^1.0.1",
+    "velocity": "^0.7.3"
+  }
+}

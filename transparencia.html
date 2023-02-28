@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,, initial-scale=1.0">
     <link rel="stylesheet" href="./style/transparencia.css">
+    <link href="mtree.css" rel="stylesheet">
+
     <title>Início</title>
   </header>
   <body>
@@ -43,19 +45,56 @@
               <h1>Transparência</h1>
               <div class="container">
                 <div class="secundary-container">
-                  <ul class="main-list">
-                    <li>Item 1</li>
-                    <li>Item 2
-                      <!-- Sub-lista oculta -->
-                      <ul class="sub-list">
-                        <li>Sub-item 1</li>
-                        <li>Sub-item 2</li>
+                  <div class="outer">
+                    <ul id="ul">
+                      <li>
+                        <span class="caret">Unidade CHS Abreu e Lima</span>
+                        <ul class="nested">
+                          <li>
+                            <span class="caret">Institucional</span>
+                            <ul class="nested">
+                              <li>
+                                <span class="caret">Horário de Atendimento e
+                                  Serviços Disponíveis ao Cidadão</span>
+                                <ul class="nested">
+                                  <span><b>Horário de Atendimento:</b> A unidade
+                                    de saúde exerce atendimento</span>.
+                                  <br>
+                                  <span><b>Serviço Disponíveis ao Cidadão:</b> A
+                                    unidade de saúde exerce atendimento</span>.
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <span class="caret">Unidade CHS Água Preta</span>
+                        <ul class="nested">
+                          <li><span class="caret">Institucional</span>
+                            <ul class="nested">
+                              <li>Item 1</li>
+                              <li>Item 2</li>
+                              <li><span class="caret">Item 3</span>
+                                <ul class="nested">
+                                  <li>Item 3.1</li>
+                                  <li>Item 3.2</li>
+                                  <li><span class="caret">Item 3.3</span>
+                                    <ul class="nested">
+                                      <li>Item 3.3.1</li>
+                                      <li>Item 3.3.2</li>
+                                      <li>Item 3.3.3</li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
                       </ul>
-                    </li>
-                    <li>Item 3</li>
-                  </ul>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <script src="scripttransparencia.js"></script>
-            </body>
-          </html>
+                <script src="script-transparency.js"></script>
+              </body>
+            </html>

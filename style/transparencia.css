@@ -139,32 +139,55 @@ body {
     border-radius: 1.5rem;
 }
 .container ul {
-    background-color: hsl(48, 86%, 67%);
     font-size: 20px;
 }
-
-.secundary-container ul ul {
-    display: none;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+.outer {
+    position: flex;
 }
-.secundary-container ul ul ul {
-    display: none;
+.outer ul {
+    list-style: none;
 }
-
-.sub-list {
-    display: none; /* Sub-lista oculta por padrão */
-  }
-  
-  /* Estilo do botão para expandir/ocultar a sub-lista */
-  .sub-list-toggle {
-    display: block;
+.outer li {
+    padding: 8px;
+}
+#ul {
     margin: 0;
-    padding: 5px 10px;
-    border: none;
-    background-color: #f0f0f0;
+    padding: 0;
+}
+.caret {
     cursor: pointer;
-  }
-  
-  /* Estilo do botão após a sub-lista ser expandida */
-  .sub-list-toggle.expanded {
-    background-color: #ddd;
-  }
+    user-select: none;
+}
+.caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 5px;
+}
+.caret-down::before {
+    transform: rotate(90deg);
+}
+.nested {
+    display: none;
+    padding: 6px;
+    transition: all 0.5s ease;
+    transform-origin: top;
+}
+
+li a:focus + .nested {
+    display: block;
+    transform: scaleY(1);
+}
+
+li > .nested {
+    transform: scaleY(0);
+}
+.active {
+    display: block;
+}
+.caret {
+    background-color: hsl(48, 86%, 67%);
+    padding: 4px;
+    border-radius: 10px;
+}
