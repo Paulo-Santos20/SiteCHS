@@ -173,6 +173,7 @@ body {
     padding: 6px;
     transition: all 0.5s ease;
     transform-origin: top;
+    
 }
 .active {
     display: block;
@@ -185,6 +186,12 @@ body {
 .baixar {
     order: 1;
     margin-left: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
 }
 .botao-central {
     appearance: none;
@@ -199,7 +206,7 @@ body {
     min-height: 2.5rem;
     min-width: 2.5rem;
     position: relative;
-    isolation: isolate;
+    isolation: isolate;   
 }
 .botao-baixar {
     position: absolute;
@@ -211,3 +218,14 @@ body {
     border-radius: 0.75rem;
     background-color: hsl(48, 86%, 67%);
 }
+.regimento-interno span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .regimento-interno button {
+    display: inline-block;
+  }
+  .nested span {
+    margin-right: 10px;
+  }

@@ -190,13 +190,6 @@ body {
     margin-left: -100%;
 }
 
-.navigation-auto div {
-    border: 2px solid #20a6ff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
 
 .navigation-auto {
     position: absolute;
