@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
 #header img {
     width: 20%;
     height: 20%;
@@ -141,7 +143,6 @@ body {
 .container ul {
     font-size: 20px;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 .outer {
     position: flex;
 }
@@ -173,7 +174,6 @@ body {
     padding: 6px;
     transition: all 0.5s ease;
     transform-origin: top;
-    
 }
 .active {
     display: block;
@@ -206,7 +206,7 @@ body {
     min-height: 2.5rem;
     min-width: 2.5rem;
     position: relative;
-    isolation: isolate;   
+    isolation: isolate;
 }
 .botao-baixar {
     position: absolute;
@@ -221,11 +221,11 @@ body {
 .regimento-interno span {
     display: inline-block;
     margin-right: 10px;
-  }
-  
-  .regimento-interno button {
+}
+
+.regimento-interno button {
     display: inline-block;
-  }
-  .nested span {
+}
+.nested span {
     margin-right: 10px;
-  }
+}
